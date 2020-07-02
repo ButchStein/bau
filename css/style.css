@@ -2,6 +2,7 @@
 
 html {
   overflow-x: hidden;
+  
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   color: gray;
   font-weight: 400;
   font-size: 1rem;
+  
 }
 
 ::-moz-selection {
@@ -132,6 +134,10 @@ body:after {
   padding: 2.5em 0;
 }
 
+.site-wrap {
+  width: 100vw;
+  height: 100vh;
+}
 @media (min-width: 768px) {
   .site-section {
     padding: 3em 0;
@@ -154,10 +160,15 @@ body:after {
     font-size: 3rem;
   }
 }
-
+.main-slider {
+  height: 500px;
+}
 .site-footer {
-  position: sticky;
+  position: fixed;
+  z-index: 1;
   bottom: 0;
+  left: 0;
+  right: 0;
   padding: 1em 0;
   background: #333333;
 }
@@ -2366,12 +2377,11 @@ body:after {
 }
 
 .custom-direction {
-  position: relative;
-  z-index: 99;
+    z-index: 99;
   border-radius: 7px;
   position: absolute;
-  right: -50px;
-  top: 75%;
+  right: 47.5%;
+  bottom: 35%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2381,9 +2391,9 @@ body:after {
 
 @media (max-width: 991.98px) {
   .custom-direction {
-    bottom: -25px;
+    bottom: 10%;
     top: auto !important;
-    right: 25% !important;
+    right: 50% !important;
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);

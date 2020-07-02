@@ -301,6 +301,10 @@ jQuery(document).ready(function ($) {
 	};
 	siteDatePicker();
 
+	// var mainSiteSlider = function () {
+	// 	$('.single-item').slick();
+	// }
+	// mainSiteSlider();
 	// var siteSticky = function () {
 	// 	$(".js-sticky-header").sticky({ topSpacing: 0 });
 	// };
